@@ -9,7 +9,7 @@ public class ProgramaBiblioteca {
 
         Livro livro= new Livro("Harry potter e a pedra filosofal","J.K. Rowling",1997,"Fantasia","Rocco",2,1234,567);
 
-        Publicacao publi[]= new Publicacao[2];
+        Publicacao[] publi = new Publicacao[2];
 
         publi[0]= livro;
         publi[1]= filme;
