@@ -1,6 +1,6 @@
 package Q1;
 
-public class Publicacao {
+public abstract class Publicacao {
 	
 	private String titulo;
 	private String autor;
@@ -9,17 +9,7 @@ public class Publicacao {
 	private String editora;
 	private int qdisponivel;
 
-	public void imprimirdados() {
-		System.out.println("IMPRESSÃO DE DADOS DA PUBLICAÇÃO\n\n");
-		System.out.println("O titulo da obra: "+this.getTitulo());
-		System.out.println("O ano de publicacao da obra: "+ this.getAnopublic());
-		System.out.println("O genero da obra é: "+this.getGenero());
-		System.out.println("A editora da obra é:"+this.getEditora());
-		System.out.println("A quantidade disponivel da obra é: "+this.getQdisponivel());
-		System.out.println("O autor da obra é: "+this.getAutor());
-
-	
-	}
+	public abstract void imprimirdados();
 	public Publicacao(String titulo,String autor,int anopublic,String genero,String editora,int qdisponivel){
 		this.setTitulo(titulo);
 		this.setAutor(autor);

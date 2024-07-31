@@ -16,7 +16,13 @@ public class Filme extends Publicacao {
 
     //OVERRIDE
     public void  imprimirdados(){
-        super.imprimirdados();
+        System.out.println("IMPRESSÃO DE DADOS DA PUBLICAÇÃO\n\n");
+        System.out.println("O titulo da obra: "+this.getTitulo());
+        System.out.println("O ano de publicacao da obra: "+ this.getAnopublic());
+        System.out.println("O genero da obra é: "+this.getGenero());
+        System.out.println("A editora da obra é:"+this.getEditora());
+        System.out.println("A quantidade disponivel da obra é: "+this.getQdisponivel());
+        System.out.println("O autor da obra é: "+this.getAutor());
 
         System.out.println("Diretor: "+this.getDiretor());
         System.out.println("Ator principal: "+this.getAtorPrincipal());
